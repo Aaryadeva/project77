@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {NavigationContainer} from '@react-navigation/native'
+import {createStackNavigator} from '@react-navigation/stack'
 import HomeScreen from './screens/HomeScreen'
 import SpaceCraftsScreen from './screens/SpaceCraftsScreen'
 import DailyPicScreen from './screens/DailyPicScreen'
 import StarMapScreen from './screens/StarMapScreen'
 
+const Stack = createStackNavigator()
 export default function App() {
   return (
     <NavigationContainer>
